@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Pure White */
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffe0; /* Light Yellow */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #27ae60; /* Emerald Green */
+    font-weight: bold;
+}
+
+/* Banner Styles */
+.banner {
+    background-color: #3CB371; /* Emerald Green */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #ffffe0; /* Light Yellow */
+    margin-top: 20px;
+}
+
+/* Content Section Styles */
+.content-section {
+    padding: 50px 0;
+}
+
+.content-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #27ae60; /* Emerald Green */
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .banner {
+        padding: 50px 0;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+}
